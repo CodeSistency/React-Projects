@@ -1,0 +1,31 @@
+@mixin flexCenter($direction, $content) {
+    display: flex;
+    justify-content: $content;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin heroAnimation($name) {
+    animation: $name 3s 1 ease-in-out alternate;
+}
+
+@mixin heroKeyframes($name) {
+    @keyframes hero {
+        0%{
+            opacity: 0;
+            transform: translateY(100%); 
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@mixin background-hero-animation($name){
+    animation: $name 2s ease-in-out 0s alternate;
+}
+
+@mixin menu{
+    animation: menu 0.5s ease-in-out 0s alternate;
+}

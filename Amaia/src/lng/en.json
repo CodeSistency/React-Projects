@@ -1,0 +1,22 @@
+{
+	"welcome": "Welcome",
+    "products": "Products",
+    "men's" : "Men's",
+    "women's": "Women's",
+    "collection": "Collection",
+    "discounts": "Discounts",
+    "contact": "Contact",
+    "cart": "Cart",
+    "cart-items" : "Cart Items",
+    "number-items" : "Number of items",
+    "total" : "Total",
+    "buy-all" : "Buy All",
+    "buy" : "Buy",
+    "size" : "Size",
+    "description": "Description",
+    "quantity": "Quantity",
+    "add-cart": "Add to Cart",
+    "remove-cart": "Remove-Item",
+    "spanish": "Spanish",
+    "english": "English"
+}

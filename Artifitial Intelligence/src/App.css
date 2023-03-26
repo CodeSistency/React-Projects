@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  background: rgb(255,255,255);
+  background: linear-gradient(155deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgb(243, 243, 243) 100%);
+}
+
+
+input{
+  text-align: left;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #dedede, #ffffff);
+  box-shadow:  9px 9px 22px #c1c1c1,
+             -9px -9px 22px #ffffff;
+  border: none;
+  width: 550px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.9rem 1.5rem;
+  font-size: 18px;
+}
+
+input:focus{
+  border: none;
+  outline: none;
+}
+
+
+
+.App{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: rgb(56, 56, 56);
+}
+
+.response{
+  font-family: inherit;
+  width: 75%;
+  padding: 1rem;
+  font-size: 18px;
+  background: #fdfcfc;
+  box-shadow:  -9px 9px 22px #c1c1c1,
+             -9px -9px 12px #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #c1c1c1;
+
+  
+}
+
+
+/* LOADING */
+
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+  margin-left: 1rem;
+}
+.dot-flashing::before, .dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #9880ff;
+  color: #9880ff;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #9880ff;
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
+
+/* To create a typing animation in CSS, you can use the steps() and @keyframes properties to set the duration and timing of the animation. For example, you can add a 3-second typing effect by using the following code: @keyframes type { from { width: 0 } to { width: 100% } } .css-typing { width: 100%; white-space: nowrap; overflow: hidden; -webkit-animation: type 3s steps(40, end); animation: type 3s steps(40, end); } The steps() property defines the duration of the animation and the number of steps in the animation [1], while the @keyframes property defines the start and end points of the animation. In this example, the typing animation will run for 3 seconds and have 40 steps, resulting in a smooth typing effect. 1. html - CSS typing animation not working for Firefox - Stack Overflow https://stackoverflow.com/questions/42100703/css-typing-animation-not-working-for-firefox */
